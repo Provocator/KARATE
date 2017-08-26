@@ -23,19 +23,22 @@ namespace KARATE_BOT
             InitializeComponent();
 
         }
-        Color colLeft = Color.FromArgb(94, 138, 140);
-        Color colRight = Color.FromArgb(88, 129, 129);
-        Point pointLeft = new Point(1682, 464);
-        Point pointRight = new Point(1819, 459);
+        Color colLeft = Color.FromArgb(93, 138, 139);
+        Color colRight = Color.FromArgb(88, 128, 129);
+        Point pointLeft = new Point(1687, 444);
+        Point pointRight = new Point(1822, 439);
 
-      
+        
         List<int> bistAll = new List<int>();
         bool oneveave = false;
         private void timer1_Tick(object sender, EventArgs e)
         {
             //Point cursor = new Point();
             //GetCursorPos(ref cursor);
-            //Console.WriteLine(cursor.X + ":" + cursor.Y);
+            ////Console.WriteLine(cursor.X + ":" + cursor.Y);
+            //var c = GetColorAt(cursor);
+            //Console.WriteLine(c.R + "," + c.G + "," + c.B + " at " + cursor.X + "," + cursor.Y);
+
             if (oneveave == false)
             {
                 if (GetColor(pointLeft).Equals(colLeft))  // если свободно слева
